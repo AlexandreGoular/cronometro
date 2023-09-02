@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 15%;
+  border-radius: 5px;
+}
+.container h1 {
+  text-align: center;
+  font-size: sans-serif;
+}
+.container .temporizador {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid green;
+}
+.container .temporizador .horas {
+  padding: 30px;
+  border: 1px solid black;
+}
+.container .temporizador .minutos {
+  border: 1px solid black;
+  padding: 30px;
+}
+.container .temporizador .segundos {
+  border: 1px solid;
+  padding: 30px;
+}
+.container .botoes {
+  margin-top: 20px;
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-between;
+  padding: 10px;
+}
+.container .botoes #iniciar {
+  padding: 10px;
+}
+.container .botoes #pausar {
+  padding: 10px;
+}
+.container .botoes #resetar {
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */
