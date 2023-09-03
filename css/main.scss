@@ -26,22 +26,22 @@ body {
 
         display: flex;
         justify-content: space-between;
-        border: 1px solid green;
+        border: 1px solid rgb(0, 0, 0);
 
         .horas {
             padding: 30px;
-            border: 1px solid black;
+            font-size: 30px;
         }
 
         .minutos {
 
-            border: 1px solid black;
+            font-size: 30px;
             padding: 30px;
         }
 
         .segundos {
 
-            border: 1px solid;
+            font-size: 30px;
             padding: 30px;
             
         }
@@ -51,25 +51,63 @@ body {
 
         margin-top: 20px;
         display: flex;
-        border: 2px solid red;
+        border: 1px solid rgb(0, 0, 0);
         justify-content: space-between;
         padding: 10px;
 
         #iniciar {
 
             padding: 10px;
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: 0.7s;
+            font-family: $fonteLetra;
     
         }
 
+        #iniciar:hover {
 
+            font-size: 16px;
+            transition: 0.7s;
+
+        }
+
+        #pausar:hover {
+            font-size: 16px;
+            transition: 0.7s;
+
+        }
+
+        #resetar:hover {
+
+            font-size: 16px;
+            transition: 0.7s;
+        }
         #pausar {
 
             padding: 10px;
+            background-color: orange;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: 0.7s;
+            font-family: $fonteLetra;
         }
 
         #resetar {
 
             padding: 10px;
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+            cursor:pointer;
+            font-size: 12px;
+            transition: 0.7s;
+            font-family: $fonteLetra;
         }
     }
 }

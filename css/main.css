@@ -1,22 +1,15 @@
-* {
-  transition: 0.4s;
-}
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #111213;
-  color: #f1f2f3;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
   width: 300px;
   height: 300px;
-  border: 2px solid #111213;
+  border: 1px solid black;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 15%;
   border-radius: 5px;
 }
 .container h1 {
@@ -26,65 +19,66 @@ body {
 .container .temporizador {
   display: flex;
   justify-content: space-between;
+  border: 1px solid rgb(0, 0, 0);
 }
 .container .temporizador .horas {
   padding: 30px;
+  font-size: 30px;
 }
 .container .temporizador .minutos {
+  font-size: 30px;
   padding: 30px;
 }
 .container .temporizador .segundos {
+  font-size: 30px;
   padding: 30px;
 }
 .container .botoes {
   margin-top: 20px;
   display: flex;
+  border: 1px solid rgb(0, 0, 0);
   justify-content: space-between;
   padding: 10px;
 }
 .container .botoes #iniciar {
   padding: 10px;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.7s;
+  font-family: sans-serif;
+}
+.container .botoes #iniciar:hover {
+  font-size: 16px;
+  transition: 0.7s;
+}
+.container .botoes #pausar:hover {
+  font-size: 16px;
+  transition: 0.7s;
+}
+.container .botoes #resetar:hover {
+  font-size: 16px;
+  transition: 0.7s;
 }
 .container .botoes #pausar {
   padding: 10px;
-  background-color: #ff4843;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.7s;
+  font-family: sans-serif;
 }
 .container .botoes #resetar {
   padding: 10px;
-  background-color: #e5e619;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.7s;
+  font-family: sans-serif;
 }/*# sourceMappingURL=main.css.map */
-
-.botoes {
-  gap: 1vh;
-}
-
-.botoes * {
-  width: 14vh;
-  background-color: rgba(39, 225, 122, 1);
-  border: 0;
-  border-radius: 3vh;
-  font-size: 3vh;
-  color: #f1f2f3;
-}
-
-#botaoSom {
-  background-color: rgba(39, 225, 122, 1);
-  color: #f1f2f3;
-  border: 0;
-  border-radius: 3vh;
-  width: 30vh;
-  height: 5vh;
-  font-size: 4vh;
-  position: absolute;
-  bottom: 430px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#botaoSom:hover {
-  font-size: 3vh;
-}
-
-#iniciar:hover, #pausar:hover, #resetar:hover {
-  font-size: 1.8vh;
-}
